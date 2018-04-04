@@ -1,0 +1,2 @@
+module ChampionViewsHelper
+end

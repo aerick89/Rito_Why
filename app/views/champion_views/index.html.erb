@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Champion Views</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Slide</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @champion_views.each do |champion_view| %>
+      <tr>
+        <td><%= champion_view.slide %></td>
+        <td><%= link_to 'Show', champion_view %></td>
+        <td><%= link_to 'Edit', edit_champion_view_path(champion_view) %></td>
+        <td><%= link_to 'Destroy', champion_view, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Champion View', new_champion_view_path %>

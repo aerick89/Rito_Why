@@ -1,0 +1,2 @@
+class ChampionView < ApplicationRecord
+end
